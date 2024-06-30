@@ -235,14 +235,19 @@ h3 {
 .dropdown:hover .dropbtn {
   background-color: #5d0cff;
 }
-/*.Navigation {/* not getting it straight? */
-/*  font-size:medium;
-  display: flex; /* Use Flexbox to create a flexible layout */
-/*    justify-content: space-around; /* Distribute items evenly along the main axis */
-/*    text-align: center; /* changed the header groups, and changed colors, and centered text-align */
-/*    display: flex;
+.Navigation {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  clear: both;
+  font-size: larger;
 }
 #Nav{
-  color: crimson;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    background-color:blue;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
