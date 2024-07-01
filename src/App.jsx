@@ -1,46 +1,48 @@
+//page for assemblings all the components together (entry point)
+//Routing page
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+
 import Nav from "./Components/Nav"
-import Portfolio from "./Components/portfolio";
+import Portfolio from "./pages/portfolio";
+import Homepage from './pages/Homepage';
+import About from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Header from './Components/Header';
+import Footer from './Components/Feet';
 //react is architect, like lego blocks
 
 function App() {
   const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState('Home');
 
-  return (
+  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  const renderPages = () => {
+    if (currentPage === 'Home') {
+      return <Homepage />;
+    }//return corresponding jsx file
+    if (currentPage === 'AboutMe') {
+      return <About />;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume/>;
+    }
+    return <Contact />;
+  };
+  return (//This is the main rendering entry point
     <>
-      <div className='Navigation' id='Nav'>
-      <Nav >
-
-      </Nav>
-      </div>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {`now ${count}`}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <div>
-      <Portfolio />
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+  <Header setCurrentPage={setCurrentPage}>
+  </Header>
+  {renderPages()}
+  <Footer/>
+      
     </>
   )
-}
+};
 
-export default App
+export default App;
