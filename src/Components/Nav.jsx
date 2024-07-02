@@ -33,6 +33,9 @@ function Nav({setCurrentPage}) {
                            <a class="nav-link" href="#" onClick={()=>setCurrentPage("Resume")}>Resume</a>
                         </li>
                         <li class="nav-item">
+                           <a class="nav-link" href="#" onClick={()=>setCurrentPage("CodingProjects")}>Coding Portfolio</a>
+                        </li>
+                        <li class="nav-item">
                            <a class="nav-link" href="#" onClick={()=>setCurrentPage("Contact")}>Contact Us</a>
                         </li>
                      </ul>

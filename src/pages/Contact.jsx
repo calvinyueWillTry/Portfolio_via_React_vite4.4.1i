@@ -19,14 +19,15 @@ function Contact () {
                           <input class="contactus" placeholder="Phone Number*" type="type" name="Phone Number"/>                          
                        </div>
                        <div class="col-md-12">
-                          <input class="contactus" placeholder="Email*" type="type" name="Email"/>                          
+                          <input class="contactus" placeholder="Email*" type="email" name="email" pattern=".+@example\.comm" size="30" required/>                          
                        </div>
                        <div class="col-md-12 select-outline">
                           <select class="custom-select ">
                              <option selected>Select Subject*</option>
-                             <option value="1">a</option>
-                             <option value="2">b</option>
-                             <option value="3">c</option>
+                             <option value="1">Audiovisual Recording</option>
+                             <option value="2">Computer Coding</option>
+                             <option value="3">Church</option>
+                             <option value="4">Other</option>
                           </select>
                        </div>
                        <div class="col-md-12">

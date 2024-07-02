@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Header from './Components/Header';
 import Footer from './Components/Feet';
+import CodingPortfolio from './pages/CodingProjects';
 //react is architect, like lego blocks
 
 function App() {
@@ -32,7 +33,12 @@ function App() {
     if (currentPage === 'Resume') {
       return <Resume/>;
     }
-    return <Contact />;
+    if (currentPage === 'CodingProjects') {
+      return <CodingPortfolio/>
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;    }
+    //add error route
   };
   return (//This is the main rendering entry point
     <>
