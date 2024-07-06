@@ -1,10 +1,14 @@
 import React from 'react';
+import PortfolioCard from '../Components/PortfolioCard';
 function CodingPortfolio () {
     return (
         <div className="about">
          <div className="container-fluid">
+         < PortfolioCard />
+         < PortfolioCard />
             <div className="row d_flex">
                <div className="col-md-6">
+                 
                   <div className="titlepage text_align_left">
                      <h2>About <br/>Skating <br/> school</h2>
                      <p>This is my portfolio of some of my work in the coding bootcamp

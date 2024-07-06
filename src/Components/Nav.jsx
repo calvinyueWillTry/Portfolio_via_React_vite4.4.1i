@@ -7,9 +7,7 @@ function Nav({setCurrentPage}) {
             <div class=" col-md-2 col-sm-3 col logo_section">
                <div class="full">
                   <div class="center-desk">
-                     <div class="logo">
-                        <a href="#" onClick={()=>setCurrentPage("Home")}><img src="images/logo.png" alt="#" /></a>
-                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -44,8 +42,8 @@ function Nav({setCurrentPage}) {
             </div>
             <div class="col-md-2">
                <ul class="email text_align_right">
-                  <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                  <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style={{cursor: "pointer"}} aria-hidden="true"></i></a> </li>
+                  <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user text-dark" aria-hidden="true"></i></a></li>
+                  <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search text-dark" style={{cursor: "pointer"}} aria-hidden="true"></i></a> </li>
                </ul>
             </div>
          </div>

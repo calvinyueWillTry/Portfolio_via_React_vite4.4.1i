@@ -1,5 +1,9 @@
 import React from 'react';
+
 function Contact () {
+function contactClick () {
+   
+   }
     return (
         <div className="contact">
         <div className="container">
@@ -19,7 +23,7 @@ function Contact () {
                           <input className="contactus" placeholder="Phone Number*" type="type" name="Phone Number"/>                          
                        </div>
                        <div className="col-md-12">
-                          <a href="mailto:metoyou@example.com" className="contactus" placeholder="Email*" type="email" name="email" size="30" required/>                          
+                       <li><a href="mailto:metoyou@example.com" placeholder="Email*" type="email" name="email" size="30" required>Email</a></li>                      
                        </div>{/**email needs an email to send to */}
                        <div className="col-md-12 select-outline">
                           <select className="custom-select ">
@@ -34,7 +38,7 @@ function Contact () {
                           <textarea className="textarea" placeholder="Message" type="type" Message="Name"></textarea>
                        </div>
                        <div className="col-md-12">
-                          <button className="send_btn">Send</button>
+                          <button className="send_btn" onClick={contactClick}>Send</button>
                        </div>
                     </div>
                  </form>
@@ -42,7 +46,7 @@ function Contact () {
               <div className="col-md-6">
                  <div className="map_main">
                     <div className="map-responsive">
-                       <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style={{border:"0", width: "100%"}} allowfullscreen=""></iframe>
+                       <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eugene,+OR" width="600" height="450" frameborder="0" style={{border:"0", width: "100%"}} allowfullscreen=""></iframe>
                     </div>
                  </div>
               </div>
