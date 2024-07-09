@@ -19,10 +19,10 @@ function Carousel() {
                                  <div className="row d_flex">
                                     <div  className="col-md-5">
                                        <div className="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
                                           <h3>
-                                             Calvin<br/> Yue<br/> Technical Apprentice
+                                             Calvin<br/> Yue<br/> Technical <br/>Profess-<br/>-ional in the Making
                                           </h3>
+                                          
                                           <div className="link_btn">
                                              <a className="read_more" href="Javascript:void(0)">Read More   <span></span></a>
                                           </div>
@@ -30,7 +30,7 @@ function Carousel() {
                                     </div>
                                     <div className="col-md-7">
                                        <div className="banner_img">
-                                          <figure><img className="img_responsive" src="images/Web.Holt.jpg"/></figure>
+                                          <figure><img className="img_responsive" src="images/Web.Seattle.JPG"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -41,11 +41,11 @@ function Carousel() {
                               <div className="carousel-caption relative">
                                  <div className="row d_flex">
                                     <div  className="col-md-5">
-                                       <div className="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
+                                       <div className="board"> 
                                           <h3>
-                                             Skating<br/> Board<br/> School
+                                             Calvin<br/> Yue<br/> Computer Full-Stack Coding Technician 
                                           </h3>
+                                          
                                           <div className="link_btn">
                                              <a className="read_more" href="Javascript:void(0)">Read More   <span></span></a>
                                           </div>
@@ -53,7 +53,7 @@ function Carousel() {
                                     </div>
                                     <div className="col-md-7">
                                        <div className="banner_img">
-                                          <figure><img className="img_responsive" src="images/banner_img.png"/></figure>
+                                          <figure><img className="img_responsive" src="images/Web.ECCChristmas.jpg"/></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -65,10 +65,10 @@ function Carousel() {
                                  <div className="row d_flex">
                                     <div  className="col-md-5">
                                        <div className="board">
-                                          <i><img src="images/top_icon.png" alt="#"/></i>
                                           <h3>
-                                             Skating<br/> Board<br/> School
+                                             Calvin<br/> Yue<br/> Audio-<br/>-visual Production
                                           </h3>
+                                          
                                           <div className="link_btn">
                                              <a className="read_more" href="Javascript:void(0)">Read More   <span></span></a>
                                           </div>
@@ -76,13 +76,36 @@ function Carousel() {
                                     </div>
                                     <div className="col-md-7">
                                        <div className="banner_img">
-                                          <figure><img className="img_responsive" src="images/banner_img.png"/></figure>
+                                          <figure><img className="img_responsive" src="images/computer.jpg"/></figure>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </div>
+                        {/**this one is not showing up? */}
+                        <div className="carousel-item">
+                              <div className="carousel-caption relative">
+                                 <div className="row d_flex">
+                                    <div  className="col-md-5">
+                                       <div className="board">
+                                          <h3>
+                                             Calvin<br/> Yue<br/> Church and Community Member
+                                          </h3>
+                                          
+                                          <div className="link_btn">
+                                             <a className="read_more" href="Javascript:void(0)">Read More   <span></span></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div className="col-md-7">
+                                       <div className="banner_img">
+                                          <figure><img className="img_responsive" src="images/ECCChoir.jpg"/></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                        
                         <a className="carousel-control-prev bg-dark" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <i className="fa fa-arrow-left bg-danger" aria-hidden="true"></i>

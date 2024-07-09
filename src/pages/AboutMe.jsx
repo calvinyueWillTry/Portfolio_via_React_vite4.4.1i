@@ -6,8 +6,8 @@ function About () {
             <div className="row d_flex">
                <div className="col-md-6">
                   <div className="titlepage text_align_left">
-                     <h2>About <br/>Skating <br/> school</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
+                     <h2>About <br/>Me <br/> </h2>
+                     <p>Born and Raised in Eugene, Oregon. 
                      </p>
                      <div className="link_btn">
                         <a className="read_more" href="about.html">Read More</a>
@@ -16,7 +16,7 @@ function About () {
                </div>
                <div className="col-md-6">
                   <div className="about_img text_align_center">
-                     <figure><img src="images/about.png" alt="#"/></figure>
+                     <figure><img src="images/computer.jpg" alt="#"/></figure>
                   </div>{/**how to get this to change dimensions or sides? */}
                </div>
             </div>

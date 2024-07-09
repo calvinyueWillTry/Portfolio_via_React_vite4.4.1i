@@ -1,8 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
 
 function Contact () {
-function contactClick () {
-   
+   const [email, emailSubmit] = useState("");
+const [text, textSubmit] = useState("");
+
+function contactClick (event) {
+   const { target } = event;
+   const inputNameString = target.name; //"email" on line 30, or "text" on line 53
+   const inputValue = target.value; //{email} on line 30, or {text} on line 53
+   if (inputNameString=== "email") {
+      emailSubmit(inputValue);
+      console.log(inputNameString, inputValue);
+   }  else if (inputNameString === "text") {
+      textSubmit(inputValue);
+      console.log(inputNameString, inputValue);//text, can't input the value
+   }
+   emailSubmit("");
+   textSubmit("");
    }
     return (
         <div className="contact">
@@ -20,11 +35,12 @@ function contactClick () {
                           <input className="contactus" placeholder="Name*" type="type" name=" Name"/> 
                        </div>
                        <div className="col-md-6">
-                          <input className="contactus" placeholder="Phone Number*" type="type" name="Phone Number"/>                          
+                          <input className="contactus" placeholder="Phone Number" type="type" name="Phone Number"/>                          
                        </div>
                        <div className="col-md-12">
-                       <li><a href="mailto:metoyou@example.com" placeholder="Email*" type="email" name="email" size="30" required>Email</a></li>                      
-                       </div>{/**email needs an email to send to */}
+                       {/**this is just a subject */}
+                       <li><a href="mailto:metoyou@example.com" placeholder="Email*" value = {email} type="email" name="email" size="30" onClick={contactClick} required>Subject</a></li>                      
+                       </div>{/** needs an email to send to? Did send a test email successfully */}
                        <div className="col-md-12 select-outline">
                           <select className="custom-select ">
                              <option selected>Select Subject*</option>
@@ -35,10 +51,10 @@ function contactClick () {
                           </select>
                        </div>
                        <div className="col-md-12">
-                          <textarea className="textarea" placeholder="Message" type="type" Message="Name"></textarea>
+                          <textarea className="textarea" placeholder="Message" type="type" name="text" Message="Name" onClick={contactClick} value = {text}></textarea>
                        </div>
                        <div className="col-md-12">
-                          <button className="send_btn" onClick={contactClick}>Send</button>
+                          <button className="send_btn">Send</button>
                        </div>
                     </div>
                  </form>

@@ -3,8 +3,8 @@ import Nav from './Nav';
 function Header({setCurrentPage}) {
 
     return  (//decouple Header and Nav
-      <div class="header">
-      <div class="container-fluid">
+      <div className="header">
+      <div className="container-fluid">
          <Nav setCurrentPage={setCurrentPage}>
          </Nav>
       </div>
