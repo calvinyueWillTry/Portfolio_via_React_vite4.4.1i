@@ -555,7 +555,7 @@ ul.email li i {
 /** about section **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     background-color:white;
      background-size: cover;
      background-position: center center;
      background-repeat: no-repeat;
@@ -1108,6 +1108,8 @@ ul.social_icon li a:hover {
      color: #501f14;
      opacity: 1;
 }
-
+.container-fluid{
+     margin-top: 15px;
+}
 
 /** end contact **/

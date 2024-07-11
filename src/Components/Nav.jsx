@@ -42,7 +42,7 @@ function Nav({setCurrentPage}) {
             </div>
             <div className="col-md-2">
                <ul className="email text_align_right">
-                  <li className="d_none"><a href="Javascript:void(0)"><i className="fa fa-user text-dark" aria-hidden="true"></i></a></li>
+                  
                   <li className="d_none"> <a href="Javascript:void(0)"><i className="fa fa-search text-dark" style={{cursor: "pointer"}} aria-hidden="true"></i></a> </li>
                </ul>
             </div>

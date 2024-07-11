@@ -5,16 +5,18 @@ function Carousel() {
             <div className="container-fluid">
                <div className="row">
                   <div className="col-md-12">
-                     
+                     {/**no longer working. Why (no error messages) ? */}
                      <div id="carouselExampleIndicators" className="carousel slide">
                         <ol className="carousel-indicators">
                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="1" className="active"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="2" className="active"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="3" className="active"></li>
                         </ol>
                         <div className="carousel-inner">
-                          
+                           
                            <div className="carousel-item active">
+                           <div class="container-fluid">
                               <div className="carousel-caption relative">
                                  <div className="row d_flex">
                                     <div  className="col-md-5">
@@ -34,6 +36,7 @@ function Carousel() {
                                        </div>
                                     </div>
                                  </div>
+                              </div>
                               </div>
                            </div>
                           
@@ -82,15 +85,15 @@ function Carousel() {
                                  </div>
                               </div>
                            </div>
-                        </div>
-                        {/**this one is not showing up? */}
-                        <div className="carousel-item">
+
+                           <div className="carousel-item">
+                           <div class="container-fluid">
                               <div className="carousel-caption relative">
                                  <div className="row d_flex">
                                     <div  className="col-md-5">
                                        <div className="board">
                                           <h3>
-                                             Calvin<br/> Yue<br/> Church and Community Member
+                                             Calvin<br/> Yue<br/> Church and <br/>Community Member
                                           </h3>
                                           
                                           <div className="link_btn">
@@ -106,6 +109,9 @@ function Carousel() {
                                  </div>
                               </div>
                            </div>
+                           </div>
+                        {/**Why is this one is not showing up? */}
+                        </div>
                        
                         <a className="carousel-control-prev bg-dark" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <i className="fa fa-arrow-left bg-danger" aria-hidden="true"></i>

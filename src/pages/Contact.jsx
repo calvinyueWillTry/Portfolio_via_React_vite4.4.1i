@@ -2,22 +2,49 @@ import React from 'react';
 import { useState } from 'react';
 
 function Contact () {
-   const [email, emailSubmit] = useState("");
-const [text, textSubmit] = useState("");
+   const [user, userName] = useState("");
+   const [email, emailAddress] = useState("");
+   const [phone, phoneNumber] = useState("");
+   const [subject, subjectSelection] = useState("");
+   const [text, textSubmit] = useState("");
 
-function contactClick (event) {
+const contactClick = (event) => {
    const { target } = event;
    const inputNameString = target.name; //"email" on line 30, or "text" on line 53
    const inputValue = target.value; //{email} on line 30, or {text} on line 53
-   if (inputNameString=== "email") {
-      emailSubmit(inputValue);
+   if (inputNameString === "email") {
       console.log(inputNameString, inputValue);
+      emailAddress(inputValue);
    }  else if (inputNameString === "text") {
-      textSubmit(inputValue);
       console.log(inputNameString, inputValue);//text, can't input the value
+      textSubmit(inputValue);
+   } else if (inputNameString ==="Name"){
+      console.log(inputNameString, inputValue);
+      userName(inputValue);
+   } else if (inputNameString === "Phone") {
+      console.log(inputNameString, inputValue);
+      phoneNumber(inputValue);
+   } else if (inputNameString === "subject") {
+      console.log(inputNameString, inputValue);
+      subjectSelection(inputValue);
+   };
    }
-   emailSubmit("");
-   textSubmit("");
+   const handleOptions = (e)=> {
+      subjectSelection(e.target.value);
+   };
+   const contactSubmit = (eve) => {
+      eve.preventDefault();
+      console.log(eve);
+      alert(`Thank you for your contact! I will get back to you as soon as I can!`);
+      const emailLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=Hello ${user},your number is ${phone}, and you sent us the following message:${text}`;
+      //need to create a window for the info to come through
+      console.log(emailLink);
+      userName("");
+      emailAddress("");
+      textSubmit("");
+      subjectSelection("");
+      phoneNumber("");
+      window.location.href = emailLink;
    }
     return (
         <div className="contact">
@@ -29,29 +56,39 @@ function contactClick (event) {
                  </div>
               </div>
               <div className="col-md-6">
-                 <form id="request" className="main_form">
+                 <form id="request" className="main_form" onSubmit={contactSubmit}>
                     <div className="row">
-                       <div className="col-md-6 ">
-                          <input className="contactus" placeholder="Name*" type="type" name=" Name"/> 
+                       <div className="col-md-6 "> 
+                          <input className="contactus" placeholder="Name*" 
+                          type="text" name="Name" value={user} 
+                          onChange={contactClick} required/> 
                        </div>
-                       <div className="col-md-6">
-                          <input className="contactus" placeholder="Phone Number" type="type" name="Phone Number"/>                          
+                       <div className="col-md-6"> 
+                          <input className="contactus" placeholder="Phone Number" 
+                          type="text" name="Phone" value={phone}
+                          onChange={contactClick} />                          
                        </div>
                        <div className="col-md-12">
                        {/**this is just a subject */}
-                       <li><a href="mailto:metoyou@example.com" placeholder="Email*" value = {email} type="email" name="email" size="30" onClick={contactClick} required>Subject</a></li>                      
+                           <input className="contactus" placeholder="Please enter your email address"
+                           type="email" name="email" value={email} onChange={contactClick} required/>
+                           <p></p>
+                       <p>Subject </p>          
                        </div>{/** needs an email to send to? Did send a test email successfully */}
                        <div className="col-md-12 select-outline">
-                          <select className="custom-select ">
+                          <select className="custom-select" name="subject" value={subject} 
+                          onChange={contactClick} required>
                              <option selected>Select Subject*</option>
-                             <option value="1">Audiovisual Recording</option>
-                             <option value="2">Computer Coding</option>
-                             <option value="3">Church</option>
-                             <option value="4">Other</option>
+                             <option value="Audiovisual Recording">Audiovisual Recording</option>
+                             <option value="Computer Coding">Computer Coding</option>
+                             <option value="Church">Church</option>
+                             <option value="Other">Other</option>
                           </select>
                        </div>
                        <div className="col-md-12">
-                          <textarea className="textarea" placeholder="Message" type="type" name="text" Message="Name" onClick={contactClick} value = {text}></textarea>
+                          <textarea className="textarea" placeholder="Message" 
+                          type="type" name="text" Message="Name" 
+                          onChange={contactClick} value = {text} required></textarea>
                        </div>
                        <div className="col-md-12">
                           <button className="send_btn">Send</button>
