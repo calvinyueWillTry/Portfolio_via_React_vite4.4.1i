@@ -1,10 +1,4 @@
 import React, {useState} from 'react';
-//import {Document, Page, pdfjs  } from "react-pdf";
-const pdfView = () => {
-   pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-      "pdfjs"
-   )
-};
 
 function Resume() {
     return (
