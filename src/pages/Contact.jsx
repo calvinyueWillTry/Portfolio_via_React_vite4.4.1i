@@ -44,7 +44,9 @@ const contactClick = (event) => {
       textSubmit("");
       subjectSelection("");
       phoneNumber("");
-      window.location.href = emailLink;
+      window.open(emailLink);
+      
+      window.location.href = "/"
    }
     return (
         <div className="contact">

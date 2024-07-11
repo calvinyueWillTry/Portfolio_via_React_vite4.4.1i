@@ -1,4 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+//import {Document, Page, pdfjs  } from "react-pdf";
+const pdfView = () => {
+   pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+      "pdfjs"
+   )
+};
+
 function Resume() {
     return (
         <div className="about">
@@ -20,11 +27,11 @@ function Resume() {
                      <p>Other experiences: </p>
                      <p> Formerly an Office Worker at Holt International (group picture on the Homepage) </p>
                      <div className="link_btn">
-                        <a className="read_more" href="about.html">Read More</a>
+                        <a className="read_more" href="AV resume 2022.pdf" target='_blank'>Click to view my Resume</a>
                      </div>
                   </div>
                </div>
-               <div className="col-md-6">
+               <div className="col-md-6"> {/**replace with images */}
                   <div className="about_img text_align_center">
                      <figure><img src="images/about.png" alt="#"/></figure>
                   </div>

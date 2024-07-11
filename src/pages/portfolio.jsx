@@ -17,10 +17,9 @@ function Portfolio() {
               </div>
               <div className="col-md-5 order_1_mobile">
                  <div className="titlepage text_align_left ">
-                    <h2>Our  Skate <br/>Shop</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variationsns
+                    <h2>Audiovisual <br/>Recording Engineer <br/>Portfolio </h2>
+                    <p>The following are some representations of some of my work. 
                     </p>
-                    <a className="read_more" href="shop.html">Buy Now</a>
                   <div>
                      <Project portfolioType={"YouTube"}></Project>
                      <Project portfolioType={"Music"}></Project>

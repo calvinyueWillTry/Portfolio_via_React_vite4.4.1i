@@ -28,7 +28,7 @@ function Nav({setCurrentPage}) {
                            <a className="nav-link" href="#" onClick={()=>setCurrentPage("Portfolio")}>Portfolio</a>
                         </li>
                         <li className="nav-item">
-                           <a className="nav-link" href="#" onClick={()=>setCurrentPage("Resume")}>Resume</a>
+                           <a className="nav-link" href="AV resume 2022.pdf" target='_blank'>Resume</a>
                         </li>
                         <li className="nav-item">
                            <a className="nav-link" href="#" onClick={()=>setCurrentPage("CodingProjects")}>Coding Portfolio</a>

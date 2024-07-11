@@ -5,12 +5,12 @@ function About () {
          <div className="container-fluid">
             <div className="row d_flex">
                <div className="col-md-6">
-                  <div className="titlepage text_align_left">
+                  <div className="text_align_left">
                      <h2>About <br/>Me <br/> </h2>
                      <p>Born and Raised in Eugene, Oregon. 
                      </p>
                      <div className="link_btn">
-                        <a className="read_more" href="about.html">Read More</a>
+                        <a className="read_more" href="Resume Worship 2024.pdf" target='_blank'>Click to see my Church Worship Resume</a>
                      </div>
                   </div>
                </div>
