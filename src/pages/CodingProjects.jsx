@@ -13,9 +13,7 @@ function CodingPortfolio () {
                      <p>This is my portfolio of samples of some of my work in the coding bootcamp
                      </p> 
                   </div>
-               
                < PortfolioCard />
-               
             </div>
          </div>
       </div>

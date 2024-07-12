@@ -9,15 +9,19 @@ function About () {
                      <h2>About <br/>Me <br/> </h2>
                      <p>Born and Raised in Eugene, Oregon. 
                      </p>
+                     <p></p>
                      <div className="link_btn">
-                        <a className="read_more" href="Resume Worship 2024.pdf" target='_blank'>Click to see my Church Worship Resume</a>
+                        <a className="read_more" href="Resume Worship 2024.pdf" target='_blank'>Click here to see my Church Worship Resume</a>
+                     </div>
+                     <div className="link_btn">
+                        <a className="read_more" target='_blank'>Another link (AV resume)</a>
                      </div>
                   </div>
                </div>
                <div className="col-md-6">
                   <div className="about_img text_align_center">
                      <figure><img src="images/computer.jpg" alt="#"/></figure>
-                  </div>{/**how to get this to change dimensions or sides? */}
+                  </div>
                </div>
             </div>
          </div>

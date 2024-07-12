@@ -40,7 +40,7 @@ class Project extends Component {
     else if (portfolioType === "Music") {
         return (//need to insert audio clips
                 <div>
-                    <p>Audio clips TBD</p>
+                    <p>Audio clips TBD</p> {/**how to add pause? */}
                     <audio className="audio-element">
                         <source src='images/Pokemon Lance.Battle Remix.Mixeli.mp3' />
                     </audio>

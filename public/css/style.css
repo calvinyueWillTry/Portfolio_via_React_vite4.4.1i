@@ -237,6 +237,7 @@ button {
 }
 
 .read_more {
+     
      font-size: 17px;
      text-transform: uppercase;
      transition: ease-in all 0.5s;
@@ -592,8 +593,9 @@ ul.email li i {
 }
 
 .about .read_more {
+     margin-top: 50px;
      color: #fff;
-     background: #3e0bce;
+     background: #f0390f;
 }
 
 .about .read_more:hover {
@@ -1114,4 +1116,5 @@ ul.social_icon li a:hover {
 .titlepage {
      margin-top: 150px;
 }
+
 /** end contact **/

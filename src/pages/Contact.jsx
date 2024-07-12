@@ -2,21 +2,21 @@ import React from 'react';
 import { useState } from 'react';
 
 function Contact () {
-   const [user, userName] = useState("");
+   const [user, userName] = useState("");//[username, setUsername] convention
    const [email, emailAddress] = useState("");
    const [phone, phoneNumber] = useState("");
    const [subject, subjectSelection] = useState("");
    const [text, textSubmit] = useState("");
-
-const contactClick = (event) => {
-   const { target } = event;
-   const inputNameString = target.name; //"email" on line 30, or "text" on line 53
-   const inputValue = target.value; //{email} on line 30, or {text} on line 53
-   if (inputNameString === "email") {
+//UX: on
+const contactClick = (event) => { //normally handleInput onChange = {calls this function}
+   const { target } = event; //{contactClick} = event
+   const inputNameString = target.name; //name property inside an HTML element
+   const inputValue = target.value;// change in the input, select, option, other HTML element
+   if (inputNameString === "email") { //name matches "email"
       console.log(inputNameString, inputValue);
-      emailAddress(inputValue);
+      emailAddress(inputValue); //set the text inputted into the useState(""), On event, Change useState(inputValue);
    }  else if (inputNameString === "text") {
-      console.log(inputNameString, inputValue);//text, can't input the value
+      console.log(inputNameString, inputValue);
       textSubmit(inputValue);
    } else if (inputNameString ==="Name"){
       console.log(inputNameString, inputValue);
@@ -27,6 +27,8 @@ const contactClick = (event) => {
    } else if (inputNameString === "subject") {
       console.log(inputNameString, inputValue);
       subjectSelection(inputValue);
+   } else { //normally error
+      console.log(inputValue); 
    };
    }
    const handleOptions = (e)=> {
