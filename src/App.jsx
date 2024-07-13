@@ -26,7 +26,7 @@ function App() {
     }//return corresponding jsx file
     if (currentPage === 'AboutMe') {
       return <About />;
-    }
+    } 
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }

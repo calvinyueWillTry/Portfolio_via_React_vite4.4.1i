@@ -9,8 +9,13 @@ function Portfolio() {
               <div className="col-md-7">
                  <div className="shop_img text_align_center" data-aos="fade-right">
                     <figure>
+                    <img className="img_responsive" src="images/avms2019.jpg" alt="#" />
                      <img className="img_responsive" src="images/Web.Clarinetist.jpg" alt="#"/>
                     <img className="img_responsive" src="images/Web.ECCChristmas.jpg" alt="#"/>
+                    <img className="img_responsive" src="images/Web.Green Screen Before.png" alt="#" />
+                    <p> Before apply the green screen effect </p>
+                    <img className="img_responsive" src="images/Web.Green Screen After.png" alt="#" />
+                    <p>After applying the background for the green screen effect</p> 
                     </figure>
                   
                  </div>
@@ -23,7 +28,7 @@ function Portfolio() {
                   <div>
                      <Project portfolioType={"YouTube"}></Project>
                      <Project portfolioType={"Music"}></Project>
-                     <Project portfolioType={"Studio"}></Project>
+                     {/**<Project portfolioType={"Studio"}></Project>*/}
                   </div>
                  </div>
               </div>

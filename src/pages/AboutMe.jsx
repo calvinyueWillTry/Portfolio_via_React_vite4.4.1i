@@ -14,7 +14,7 @@ function About () {
                         <a className="read_more" href="Resume Worship 2024.pdf" target='_blank'>Click here to see my Church Worship Resume</a>
                      </div>
                      <div className="link_btn">
-                        <a className="read_more" target='_blank'>Another link (AV resume)</a>
+                        <a className="read_more" href="AV resume 2022.pdf" target='_blank'>Click here to see my AudioVisual resume</a>
                      </div>
                   </div>
                </div>
