@@ -1,6 +1,6 @@
 //page for assemblings all the components together (entry point)
 //Routing page
-import { useState } from 'react'
+import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -38,7 +38,7 @@ function App() {
     }
     if (currentPage === "Contact") {
       return <Contact />;    }
-    //add error route
+    else {console.log(err)}
   };
   return (//This is the main rendering entry point
     <>
@@ -46,7 +46,6 @@ function App() {
   </Header>
   {renderPages()}
   <Footer/>
-      
     </>
   )
 };

@@ -1,0 +1,12 @@
+.carousel-text{
+    font-size: medium;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 150px;
+}
+.img_responsive{
+    margin-top: 150px;
+    display: flex;
+    
+}

@@ -7,7 +7,9 @@ function Nav({setCurrentPage}) {
             <div className=" col-md-2 col-sm-3 col logo_section">
                <div className="full">
                   <div className="center-desk">
-                     
+                  <div className="mt-2 mb-8">
+                     <p className="font-heading text-lg font-large text-white">CALVIN YUE</p>
+                  </div>
                   </div>
                </div>
             </div>

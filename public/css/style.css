@@ -427,6 +427,7 @@ ul.email li i {
 .carousel-control.right,
 .carousel-control.left {
      background-image: none;
+     background-color: red;
 }
 
 .carousel-item {
