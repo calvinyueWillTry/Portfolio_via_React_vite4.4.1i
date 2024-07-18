@@ -18,3 +18,8 @@ Coding Portfolio: Gives a header, then creates a space for the PortfolioCard.jsx
 <img width="1280" alt="Screen Shot 2024-07-17 at 10 16 09 PM" src="https://github.com/user-attachments/assets/0e692f2c-0243-49f6-9c0f-2fb58a9f9f9c">
 AboutMe.jsx includes a page format, and renders links to downloadable PDFs. 
 <img width="1280" alt="Screen Shot 2024-07-17 at 10 21 45 PM" src="https://github.com/user-attachments/assets/997e2e31-ad7d-48cd-a14e-a290c9f1434f">
+Nav.jsx creates clickable links (not Hamburger though) to navigate through the pages, calling the string name, according to how it's defined in App.jsx. It is then rendered in Header.jsx, to stay in all pages. 
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 25 11 PM" src="https://github.com/user-attachments/assets/36434f48-e314-47d0-8e51-dcfda4b3f74b">
+Feet.jsx: besides rendering contact info and a map of Eugene, OR, it also has logos with backgrounds, that contains clickable links. 
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 30 07 PM" src="https://github.com/user-attachments/assets/1cc15b7b-c5ca-4b84-ad99-ec95741cf052">
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 27 42 PM" src="https://github.com/user-attachments/assets/1e396990-3fbd-48ad-8959-3cf25429a96c">
