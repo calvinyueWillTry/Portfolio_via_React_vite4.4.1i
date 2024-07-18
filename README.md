@@ -8,4 +8,13 @@ App.jsx: Routing page for assemblings all the JSX pages and components together 
 JSX files in Pages folder:
 Resume: replaced by a href to a direct PDF link, that using "target='_blank'" will open up a tab to the PDF that is downloable and printable. 
 Portfolio: posts some photos, and then calls the component Project.jsx contigent on the string components.
-Project.jsx: 
+Project.jsx: controls the rendering of content based on the portfolioType prop passed to it. If "YouTube" (line 26), then one can select specific YouTube videos to play, depending on the YouTube id of the video. If "Music" (line 45), then the button onClick will call either function, depending on which one is selected.
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 08 49 PM" src="https://github.com/user-attachments/assets/a0d87f0d-4224-4835-8061-826daf470e3d">
+Homepage.jsx: calls the HomeCarousel.jsx, which creates a carousel of photos with text captions at the bottom of the photos. One can chooe the "previous" or "next" buttons on either side to "scroll" (the "next" button will appear because the hover will turn from a pointer to a hand shape).
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 12 17 PM" src="https://github.com/user-attachments/assets/e06d280b-5bf6-4abe-9564-bddd83f91dc1">
+Contact.jsx: uses the useState hook from React to manage state for the user's name, email, phone number, subject, and text input fields, changing according to the text inputs (or option selection in the case of "subject"), then after an alert popup, redirects to a page to allow one to send the message.
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 13 05 PM" src="https://github.com/user-attachments/assets/b33d6c1e-6f51-4c59-b104-f23573f9bd62">
+Coding Portfolio: Gives a header, then creates a space for the PortfolioCard.jsx. This page creates a card structure,  each rendering a section that displays information about the portfolio of some previous work (title, description links, and screenshot).  
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 16 09 PM" src="https://github.com/user-attachments/assets/0e692f2c-0243-49f6-9c0f-2fb58a9f9f9c">
+AboutMe.jsx includes a page format, and renders links to downloadable PDFs. 
+<img width="1280" alt="Screen Shot 2024-07-17 at 10 21 45 PM" src="https://github.com/user-attachments/assets/997e2e31-ad7d-48cd-a14e-a290c9f1434f">
